@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bishop - The African Church, Diocese of Ifo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-contact">
+                <span><i class="fas fa-envelope"></i> <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></span>
+                <span><i class="fas fa-phone"></i> {{PHONE_1}}</span>
+            </div>
+            <div class="top-social">
+                <a href="{{FACEBOOK_URL}}"><i class="fab fa-facebook-f"></i></a>
+                <a href="{{YOUTUBE_URL}}"><i class="fab fa-youtube"></i></a>
+                <a href="{{INSTAGRAM_URL}}"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <div class="logo-text"><h1>The African Church</h1><p>Diocese of Ifo</p></div>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown"><a href="#" class="active">About Us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Our History</a></li>
+                            <li><a href="bishop.html">The Bishop</a></li>
+                            <li><a href="clergy.html">Our Clergy</a></li>
+                            <li><a href="mission.html">Mission & Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="parishes.html">Parishes</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="give.html" class="btn-give">Give Online</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <section class="page-banner" style="background-image: url('images/hero-2.jpg');">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <h1>The Bishop</h1>
+            <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>The Bishop</span></nav>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="bishop-profile">
+                <div class="profile-image">
+                    <img src="bishop.jpg" alt="RT. REV M.O OLADIPUPO ESQ. AICMC">
+                </div>
+                <div class="profile-details">
+                    <span class="section-label">Diocesan Bishop</span>
+                    <h2>RT. REV M.O OLADIPUPO ESQ. AICMC</h2>
+                    <p class="bishop-title">Diocesan Bishop Ifo Diocese</p>
+                    <p>Welcome to the official portal of The African Church, Diocese of Ifo — Citadel of Grace and Love. Inaugurated on April 7th, 2018.</p>
+                    <p>Under the episcopal leadership of RT. REV M.O OLADIPUPO ESQ. AICMC, the diocese continues to expand God's kingdom across the five archdeaconries in Ogun State.</p>
+
+                    <div class="bishop-meta">
+                        <div class="meta-item"><i class="fas fa-graduation-cap"></i><div><strong>Qualifications</strong><p>B.A. (Hons), M.A., LLB (Hons), BL, Dip. Th | PIN: D/01/00056</p></div></div>
+                        <div class="meta-item"><i class="fas fa-phone"></i><div><strong>Telephone</strong><p>08023414109</p></div></div>
+                        <div class="meta-item"><i class="fas fa-church"></i><div><strong>Cathedral</strong><p>Emmanuel Cathedral, 77/79 Coker Road, Ifo</p></div></div>
+                    </div>
+
+                    <blockquote>
+                        <p>"{{BISHOP_QUOTE}}"</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="currentYear"></span> The African Church, Diocese of Ifo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

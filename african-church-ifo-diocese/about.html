@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The African Church, Diocese of Ifo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- TOP BAR (same as index) -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-contact">
+                <span><i class="fas fa-envelope"></i> <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></span>
+                <span><i class="fas fa-phone"></i> {{PHONE_1}}</span>
+            </div>
+            <div class="top-social">
+                <a href="{{FACEBOOK_URL}}"><i class="fab fa-facebook-f"></i></a>
+                <a href="{{YOUTUBE_URL}}"><i class="fab fa-youtube"></i></a>
+                <a href="{{INSTAGRAM_URL}}"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <div class="logo-text">
+                    <h1>The African Church</h1>
+                    <p>Diocese of Ifo</p>
+                </div>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">About Us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Our History</a></li>
+                            <li><a href="bishop.html">The Bishop</a></li>
+                            <li><a href="clergy.html">Our Clergy</a></li>
+                            <li><a href="mission.html">Mission & Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="parishes.html">Parishes</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="give.html" class="btn-give">Give Online</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner" style="background-image: url('images/hero-1.jpg');">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <h1>About Us</h1>
+            <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>About Us</span></nav>
+        </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <span class="section-label">Our Story</span>
+                    <h2>History of The African Church, Diocese of Ifo</h2>
+                    <p>{{HISTORY_PARAGRAPH_1}}</p>
+                    <p>{{HISTORY_PARAGRAPH_2}}</p>
+                    <p>{{HISTORY_PARAGRAPH_3}}</p>
+
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-cross"></i>
+                            <h3>Our Faith</h3>
+                            <p>{{ABOUT_FAITH_TEXT}}</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-people-group"></i>
+                            <h3>Our Community</h3>
+                            <p>{{ABOUT_COMMUNITY_TEXT}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Cathedral Info</h3>
+                        <ul>
+                            <li><strong>Name:</strong> Emmanuel Cathedral, Ifo</li>
+                            <li><strong>Headquarters:</strong> 77/79 Coker Road, Ifo</li>
+                            <li><strong>Bishop:</strong> RT. REV M.O OLADIPUPO ESQ. AICMC</li>
+                            <li><strong>Diocese Inaugurated:</strong> April 7th, 2018</li>
+                            <li><strong>Church Established:</strong> October 13th, 1901</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card accent">
+                        <h3>Our Motto</h3>
+                        <p class="motto-text">Heaven's Light Our Guide | Citadel of Grace &amp; Love</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (same as index) -->
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="currentYear"></span> The African Church, Diocese of Ifo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
